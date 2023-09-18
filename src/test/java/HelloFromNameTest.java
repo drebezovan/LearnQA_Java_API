@@ -23,7 +23,6 @@ public class HelloFromNameTest {
     public void testOutputsGetRequestResponse(){
 
         Response response = RestAssured
-                .given()
                 .get("https://playground.learnqa.ru/api/hello?name=Наташа")
                 .andReturn();
 
