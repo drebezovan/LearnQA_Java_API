@@ -24,7 +24,6 @@ public class HelloFromNameTest {
 
         Response response = RestAssured
                 .given()
-                .queryParam("name", "Наташа")
                 .get("https://playground.learnqa.ru/api/hello?name=Наташа")
                 .andReturn();
 
